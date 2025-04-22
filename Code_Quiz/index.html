@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--CSS Linked-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <header>
+        <div class="header">
+            <!--High Score Section-->
+            <div>
+                <button class="button" id="scoreCheck">View Highscores</button>
+            </div>
+            <div>
+                <p id="counter">Time Left:60s</p>
+                <p id="timer" class="timer"></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+      <section class="introPage" id="introPage2">
+        <div id="introduction">
+            <!--INTRO SECTION-->
+            <div id="introTitle">
+                <h1>Coding Quiz Challenge</h1>
+            </div>
+                <div id="introDescription">
+                    <p>Press the start button to begin, you will have 60 seconds to answer 5 multiple choice questions. You may save your highscore at the end. Good Luck!</p>
+                </div>
+                <div id="buttonStart" class="buttonStart2">
+                    <button id="startBtn">start</button>
+                </div>
+        </div> 
+      </section>
+
+      <!--QUESTION SECTION-->
+        <section class="qustionSection" id="questionSection2">
+            <div>
+                <!--qustion body-->
+                <div class="questionDiv Hide">
+              
+                    <h2 id = "askQuestion"></h2>
+                    <h2 id = "questionMain"></h2>
+                    <ul class = "ulQuestions">
+                        <li><button class= "choicesButton HiddenVar" id= "answerButton1" value="a">Answer1</button> </li>
+                        <li><button class= "choicesButton HiddenVar" id= "answerButton2" value="b">Answer2</button> </li>
+                        <li><button class= "choicesButton HiddenVar" id= "answerButton3" value="c">Answer3</button> </li>
+                        <li><button class= "choicesButton HiddenVar" id= "answerButton4" value="d">Answer4</button> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--RESULTS SECTION-->
+        <section class="resultsSection" id="resultsSection2">
+            <div>
+                <div class="resultsDiv" style="display: none">
+                    <h2 id = "resultsAnnounce">Results Page</h2>
+                    <ul id = "highscoreMain">
+                    </ul>
+                    
+                    <input type="search" id="highscoreName" name="q"
+                    placeholder="Name">
+                    <button id="saveHighscoreBtn">Save Highscore</button>
+                    
+               
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+
+</script>
+  
+  
+    <script src="script.js"></script>
+  </body>
+</html>
